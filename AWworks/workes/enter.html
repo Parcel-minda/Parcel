@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/enter.css">
+    <title>登录页面</title>
+
+<meta charset="utf-8">
+</head>
+<body tracingsrc="../images/3.jpg" tracingopacity="100">
+	
+    <div class = "pg_header">
+        <a cla ss = "logo"><img src="../images/2.png" width="80" height="70" alt=""  style="margin: 0 auto;" />
+</a>
+		 <a class="pg_dl" id="i77"  >登录</a> 
+		 <p style="width: 20px;display: inline-block;"></p> 
+        <a class="pg_dl" id="i78" href="main.html">退出</a>    
+</div>
+	<div class="imgbox">
+
+</div>
+<div class="zong">	
+<form name="tijiao" method="post" onsubmit="return check()" action="../CSS/winford.top">
+        <div class="left"></div>
+  <div class="pg_body" >
+              	 <div class="menu">手机号:</div>
+                  	  <div class="kong">
+                      	  <input id="i5" type="text" name="01">							
+                   	 </div>
+               	 <div class="menu">密码:</div>
+                   	 <div class="kong">
+                        	<input id="text2" type="password" name="02" onblur="check()">
+                       
+                   	 </div>        
+				 <div class="login_help">
+					 <label class="frm_checkbox_label">
+					 <i class="icon_checkbox"></i>
+		<input type="checkbox" class="frm_checkbox" value="false" >记住密码 </label>
+					 <p style="width: 25px;display: inline-block;"></p>
+					 <a href="/cgi-bin/readtemplate?t=forgetpwd/index_tmpl" class="login_forget_pwd">忘记密码</a></div>
+       	<p style="width: 7px;height: 8px display: inline-block;"></p>
+			<input id="i111" type="submit" name="002" value="登录" >
+	 
+            <input id="i222" type="button" name="004" value="取消">
+
+	</div>
+
+</form>
+</div>
+    <script type="text/javascript">
+            //刷新or取消
+            document.getElementById('i77').onclick = function(){
+                location.reload();
+            }
+            document.getElementById('i222').onclick = function(){
+                location.reload();
+            }
+
+            //用户名验证
+            function checkname(){ 
+                var div = document.getElementById("div1"); 
+                div.innerHTML = ""; 
+                var name1 = document.tijiao.text1.value; 
+                if (name1 == "") { 
+                div.innerHTML = "手机号不能为空！"; 
+                document.tijiao.text1.focus(); 
+                return false; 
+            } 
+                if (name1.length ！=11) { 
+                div.innerHTML = "请输入11位手机号码"; 
+                document.tijiao.text1.select(); 
+                return false; 
+            } 
+                var charname1 = name1.toLowerCase(); 
+                for (var i = 0; i < name1.length; i++) { 
+                var charname = charname1.charAt(i); 
+                if (!(charname >= 0 && charname <= 9) ) { 
+                    div.innerHTML = "请输入正确的手机号"; 
+                    document.form1.text1.select(); 
+                    return false; 
+                } 
+            } 
+                return true;
+        }
+
+            //密码验证
+            function checkpassword(){ 
+                var div = document.getElementById("div2"); 
+                div.innerHTML = ""; 
+                var password = document.tijiao.text2.value; 
+                if (password == "") { 
+                div.innerHTML = "密码不能为空"; 
+                document.tijao.text2.focus(); 
+                return false; 
+            } 
+                return true; 
+        }
+            function check(){ 
+            if (checkname() && checkpassword() && checkrepassword() && checkEmail()) { 
+            return true; 
+            } 
+            else { 
+            return false; 
+        } 
+    } 
+    </script>
+</body>
+</html>

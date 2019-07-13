@@ -1,0 +1,138 @@
+/* CSS Document */
+	.pg_header .logo{
+            margin: 0 auto;
+			text-align: center;
+            width: 200px;
+            line-height: 58px;
+            font-size: 28px;
+        }
+        .pg_dl{
+            left: 400px;
+            display: inline-block;
+			float: center
+            padding: 0 40px;
+            color: black;
+        }
+        .pg_header .pg_dl:hover{
+            background-color: #F40B0F;
+            cursor: pointer;
+        }
+         .left{
+            margin-top: 25px;
+            width: 8%;
+            display: inline-block;
+            float: center;   
+			color: black;
+        }
+        .pg_body{
+            margin-top: 50px;
+            font-size: 18px;
+            display: inline-block;
+			
+			width: 200px;
+        }
+        .pg_body .menu{
+            width: auto;
+            padding: 15px;
+			color: black;
+            
+            font-weight: bold;
+        }
+        input[type="text"]{
+            width: 225px;
+            height: 25px;
+			color: black;
+            border-radius: 6px;
+        }
+        input[type="password"]{
+            width: 225px;
+            height: 25px;
+			color: black;
+            border-radius: 6px;
+        }
+        input[type="button"]{
+            background-color: #555555;
+            border: none;
+            color: white;
+            padding: 6px 140px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+			background-color:white;
+            border: none;
+            color: black;
+            padding:  6px 140px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .kong{
+            margin-top: -54px;
+            margin-left:70px;
+            float:left;
+            padding: 15px;
+			color: white;
+        }
+        .img{
+            width: 50px;
+            height: 40px;
+	}
+        .tian{
+            color: red;
+            float: right;
+            font-size: 12px;
+            margin-right: -100px;
+            margin-top: -25px;
+        }
+	.imgbox img{background-image:url(../images/15.jpg) ;
+		margin-top: 75px;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-size:cover 100%;
+		-moz-background-size:cover;
+		-webkit-background-size:cover;
+}
+	.login_help{
+		color: black;
+	}
+	.login_forget_pwd{
+		color: black;
+	}
+/*这里是关键*/
+.zong{
+  
+	margin-left:570px;
+	margin-top: 100px;
+   background:rgba(0,0,0,0.4) none repeat scroll !important;
+
+  	background-position: center；
+    padding:10px;
+    width:400px;
+    min-height:225px;
+    height:350px;
+    font-family:"微软雅黑";
+    -webkit-box-shadow:4px 4px 5px #333;/*webkit*/ 
+    -moz-box-shadow:4px 4px 5px #333;/*firefox*/     
+    box-shadow:4px 4px 5px #333;/*opera或ie9*/ 
+}
+                            
+    body {
+		background-margin-top: 75px;
+	background-image: url(../images/15.jpg);
+	background-repeat: no-repeat;
+    background-size:cover;
+}
+
+body,td,th {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}

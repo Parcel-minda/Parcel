@@ -1,0 +1,117 @@
+/* CSS Document */
+        ul li {
+            list-style: none;
+        }
+         
+        .package-status {
+            padding: 18px 20px 50px 100px;
+			
+        }
+         
+        .package-status .status-list {
+            margin: 0;
+            padding: 0;
+            margin-top: -5px;
+            padding-left: 8px;
+            list-style: none;
+        }
+         
+        .package-status .status-list>li {
+            border-left: 2px solid #0278D8;
+            text-align: left;
+        }
+         
+        .package-status .status-list>li:before {
+            /* 流程点的样式 */
+            content: '';
+            border: 3px solid #0278D8;
+            background-color: #0278D8;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 10px;
+            margin-left: -7px;
+            margin-right: 10px
+        }
+         
+        .package-status .status-box {
+            overflow: hidden
+        }
+         
+        .package-status .status-list>li {
+            height: auto;
+            width: 95%;
+        }
+         
+        .package-status .status-list {
+            margin-top: -8px
+        }
+         
+        .package-status .status-box {
+            position: relative
+        }
+         
+        .package-status .status-box:before {
+            content: " ";
+            background-color: #f3f3f3;
+            display: block;
+            position: absolute;
+            top: -8px;
+            left: 20px;
+            width: 10px;
+            height: 4px
+        }
+         
+        .package-status .status-list {
+            margin-top: 0px;
+        }
+         
+        .status-list>li:not(:first-child) {
+            padding-top: 10px;
+        }
+         
+        .status-content-before {
+            text-align: left;
+            margin-left: 25px;
+            margin-top: -20px;
+        }
+         
+        .status-content-latest {
+            text-align: left;
+            margin-left: 25px;
+            color: #0278D8;
+            margin-top: -20px;
+        }
+         
+        .status-time-before {
+            text-align: left;
+            margin-left: 25px;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+         
+        .status-time-latest {
+            text-align: left;
+            margin-left: 25px;
+            color: #0278D8;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+         
+        .status-line {
+            border-bottom: 1px solid #ccc;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+         
+        .list {
+            padding: 0 20px;
+            background-color: #F8F8F8;
+            margin: 10px 0 0 25px;
+            border: 1px solid #EBEBEB;
+        }
+         
+        .list li {
+            line-height: 30px;
+            color: #616161;
+        }
